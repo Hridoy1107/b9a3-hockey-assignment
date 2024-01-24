@@ -1,11 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey Club</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7b4e145e9d.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="font-manrope">
+    <header class="lg:ml-40">
+        <section>
+            <div class="flex w-[335px] lg:w-[1170px] lg:justify-around mt-8 justify-between">
+            <div>
+                <h3 class="text-2xl font-bold w-40 h-12">Hockey<span class="text-[16px] lg:text-2xl font-bold text-red-500">’</span>s</h3>
+            </div>
+            <div class="lg:visible invisible lg:relative absolute">
+                <ul class="flex gap-6 lg:w-96 lg:h-10 py-2">
+                        <li class="text-red-500">Home</li>
+                        <li>About</li>
+                        <li>Pages</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                </ul>
+            </div>
+            <div class="flex">
+                <i class="lg:py-6 py-4 lg:px-6 fa-solid align-middle fa-magnifying-glass"></i>
+                <button class="btn lg:w-48 lg:h-14 bg-red-500 text-white  text-xl">Get Ticket</button>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="mt-6">
+                <div class="carousel w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px] relative">
+                    <div id="item1" class="carousel-item w-[1170px] h-[550px]">
+                      <img src="./Images/1.png" class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px]" />
+                    </div> 
+                    <div id="item2" class="carousel-item w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px]">
+                      <img src="./Images/field-hockey-697312.jpg" class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px]" />
+                    </div> 
+                    <div id="item3" class="carousel-item w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px]">
+                      <img src="./Images/hockey-3381887_1920.jpg" class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px]" />
+                    </div> 
+                    <div id="item4" class="carousel-item w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px]">
+                      <img src="./Images/people-1135050.jpg" class="w-[335px] h-[200px] lg:w-[1170px] lg:h-[550px]" />
+                    </div>
+                  </div>
+                  <div class="mt-10 lg:ml-[580px] lg:top-[440px] lg:w-[560px] lg:h-[160px] bg-black absolute p-8 rounded-2xl w-[335px] h-[136px]">
+                    <h3 class="text-white text-xl lg:text-2xl font-bold lg:w-[390px] lg:h-[32px]">Meet all the heroes from the field</h3>
+                    <p class="text-white lg:mt-4 lg:text-[16px] text-[8px] lg:w-[500px] lg:h-[50px] w-[205px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                  </div>
+                  <div class="flex justify-center  w-[335px] lg:w-[1170px] py-2 gap-2">
+                    <a href="#item1" class="btn btn-xs">1</a> 
+                    <a href="#item2" class="btn btn-xs">2</a> 
+                    <a href="#item3" class="btn btn-xs">3</a> 
+                    <a href="#item4" class="btn btn-xs">4</a>
+                  </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="lg:ml-40">
+        <section>
+            <div class="w-[335px] lg:w-[1170px] lg:mt-8 mt-[150px]">
+                <h3 class="font-bold text-[18px] lg:text-4xl text-center text-black">Professional Hockeys Club</h3>
+                <h3 class="mt-2 lg:mt-3 text-[10px] lg:text-[16px] text-center text-blue-400">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</h3>
+            </div>
+        </section>
+        <section>
+            <div class="sm:grid-rows-1 lg:grid-rows-4 mt-6 lg:mt-10 gap-4 lg:flex lg:w-[1170px] lg:justify-around">
+                <div class="grid justify-center items-center">
+                    <div class="ml-14 radial-progress w-[120px] h-[120px]" style="--value:87; color: black; font-weight: 800;" role="progressbar">87%</div>
+                    <h3 class="text-[20px] text-center">Player Facility</h3>
+                    <h3 class="text-[16px] w-[250px] h-[50px] text-center">Amet consectetur. Condimentum dignissim adipiscing .</h3>
+                </div>
+                <div class="grid justify-center items-center">
+                    <div class="ml-14 radial-progress w-[120px] h-[120px]" style="--value:95; color: black; font-weight: 800;" role="progressbar">95%</div>
+                    <h3 class="text-[20px] text-center">Experienced Coach</h3>
+                    <h3 class="text-[16px] w-[250px] h-[50px] text-center">Amet consectetur. Condimentum dignissim adipiscing .</h3>
+                </div>
+                <div class="grid justify-center items-center">
+                    <div class="ml-14 radial-progress w-[120px] h-[120px]" style="--value:90; color: black; font-weight: 800;" role="progressbar">90%</div>
+                    <h3 class="text-[20px] text-center">Senior Player</h3>
+                    <h3 class="text-[16px] w-[250px] h-[50px] text-center">Amet consectetur. Condimentum dignissim adipiscing .</h3>
+                </div>
+                <div class="grid justify-center items-center">
+                    <div class="ml-14 radial-progress w-[120px] h-[120px]" style="--value:80; color: black; font-weight: 800;" role="progressbar">80%</div>
+                    <h3 class="text-[20px] text-center">Training Ground</h3>
+                    <h3 class="text-[16px] w-[250px] h-[50px] text-center">Amet consectetur. Condimentum dignissim adipiscing .</h3>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <div class="lg:w-[1170px] mt-10">
+                    <h3 class="font-bold lg:text-4xl text-[20px] text-center">Program Sections</h3>
+                    <p class="lg:text-[16px] text-[8px] text-center mt-2">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="lg:flex lg:w-[1170px] mt-9 gap-6">
+                <div class="mb-1">
+                    <img src="./Images/2.png" alt="">
+                    <div  class="absolute top-[1550px] ml-4 lg:top-[1350px]">
+                        <h3 class="lg:text-[28px] text-[20px] font-bold text-white">Junior Program</h3>
+                        <p class="lg:w-[495px] lg:text-[16px] text-[10px]mt-3 text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                        <button class="bg-red-500 text-white lg:text-[20px] text-[10px] lg:w-[180px] lg:h-[48px] mt-2">Register Now!</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="./Images/3.png" alt="">
+                    <div  class="absolute top-[1750px] ml-4 lg:top-[1350px]">
+                        <h3 class="lg:text-[28px] text-[20px] font-bold text-white">Teenager Program</h3>
+                        <p class="lg:w-[495px] lg:text-[16px] text-[10px]mt-3 text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                        <button class="bg-red-500 text-white lg:text-[20px] text-[10px] lg:w-[180px] lg:h-[48px] mt-2">Register Now!</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="lg:w-[1170px] mt-1 lg:mt-4">
+                <div>
+                    <img class="h-[225px] lg:h-[450px]" src="./Images/4.png" alt="">
+                    <div  class="absolute top-[1950px] ml-4 lg:top-[1750px]">
+                        <h3 class="lg:text-[28px] text-[20px] font-bold text-white">Professional Program</h3>
+                        <p class="lg:w-[495px] lg:text-[16px] text-[10px]mt-3 text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                        <button class="bg-red-500 text-white lg:text-[20px] text-[10px] lg:w-[180px] lg:h-[48px] mt-2">Register Now!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
